@@ -1,0 +1,13 @@
+CREATE DATABASE student;
+
+USE student;
+
+
+CREATE TABLE Students (
+    ID INT AUTO_INCREMENT NOT NULL,
+    FirstName VARCHAR(255) NOT NULL,
+    LastName VARCHAR(255) NOT NULL,
+    Age INT NOT NULL,
+    RegistrationDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (ID)
+);
